@@ -1,0 +1,17 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Despesas dos Parlamentares</h1>
+  <div class="container form-group row">
+    <input type="number" class="padding-v col-lg-4 col-md-4 col-sm-4 form-control" [(ngModel)]="idParlamentar" placeholder="ID do Parlamentar (ex. 211866)">
+    <button class="btn btn-primary" (click)="consultApi(idParlamentar)">Consultar</button>
+  </div>
+  <div class="container">
+    <div class="chart-display">
+      <div style="width: 100%">
+        <canvas id="bar"></canvas>
+      </div>    
+      <div style="width: 100%">
+        <canvas id="doughnut"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
